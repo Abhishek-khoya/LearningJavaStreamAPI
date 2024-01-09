@@ -61,6 +61,10 @@ public class Main {
                 .sorted(Comparator.comparing(Student::getRank))
                 .skip(1)
                 .findFirst().get();
+        Student ThirdRankStudent = studentList.stream()
+                .sorted(Comparator.comparing(Student::getRank))
+                .skip(2)
+                .findFirst().get();
         System.out.println(secondRankStudent);
 
     }
